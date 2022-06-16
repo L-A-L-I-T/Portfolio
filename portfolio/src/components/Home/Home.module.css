@@ -2,4 +2,22 @@
   display : flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color : white;
+}
+
+.topText{
+  font-size : 25px;
+}
+
+.profession{
+  font-size : 40px;
+  font-weight: 800;
+  margin : 5px 0px;
+}
+
+.bottomText{
+  font-size : 20px;
+  font-weight: 100;
+  margin : 20px 0px;
 }
