@@ -5,22 +5,25 @@ import { BrowserRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 function Header() {
 	const [activeSection, setActiveSection] = useState("home");
+	const [navbarActive, setNavbarActive] = useState(false);
 
 	const listenScrollEvent = () => {
+		if (window.scrollY >= 20) {
+			setNavbarActive(true);
+		} else {
+			setNavbarActive(false);
+		}
 		const windowHeight = window.innerHeight;
 		console.log(windowHeight);
-		// window.scrollY >= 4 * windowHeight
-		// 	? setActiveSection("contact")
-		// 	: window.scrollY >= 3 * windowHeight
-		// 	? setActiveSection("projects")
-		// 	: window.scrollY >= 2 * windowHeight
-		// 	? setActiveSection("skills")
-		// 	: window.scrollY >= 1 * windowHeight
-		// 	? setActiveSection("about")
-		// 	: setActiveSection("home");
-		window.scrollY > 10
+		window.scrollY >= 4 * windowHeight
+			? setActiveSection("contact")
+			: window.scrollY >= 3 * windowHeight
+			? setActiveSection("projects")
+			: window.scrollY >= 2 * windowHeight
+			? setActiveSection("skills")
+			: window.scrollY >= 1 * windowHeight
 			? setActiveSection("about")
-			: setActiveSection("skills");
+			: setActiveSection("home");
 	};
 	useEffect(() => {
 		const windowHeight = window.innerHeight;
@@ -30,7 +33,12 @@ function Header() {
 	});
 	return (
 		<BrowserRouter>
-			<div className={styles.container}>
+			<div
+				className={styles.container}
+				style={{
+					background: !navbarActive ? "transparent" : "rgba(56, 62, 69, 0.44)",
+				}}
+			>
 				<div>
 					<img src={Logo} alt="logo" className={styles.logo} />
 				</div>
@@ -78,7 +86,17 @@ function Header() {
 						Contact
 					</HashLink>
 				</div>
-				<button className={styles.downloadBtn}>Download Resume</button>
+				<button className={styles.downloadBtn}>
+					<i
+						class="bi bi-download"
+						style={{
+							marginRight: "10px",
+							fontSize: "16px",
+							fontWeight: "500",
+						}}
+					></i>
+					Resume
+				</button>
 			</div>
 		</BrowserRouter>
 	);

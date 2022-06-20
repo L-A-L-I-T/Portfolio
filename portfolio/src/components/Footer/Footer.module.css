@@ -1,0 +1,64 @@
+.container{
+  position: absolute;
+  bottom : 0px;
+  background: #1C1C1C;
+  width : 100%;
+  display : flex;
+  padding : 50px 100px;
+  color : white;
+}
+
+.icon{
+ margin-right : 20px
+}
+
+div>h5{
+  margin-bottom : 30px;
+  color : #F5FBF2;
+}
+
+div > p{
+  color: #7B7B7B;
+}
+
+.inputContainer{
+  position: relative;
+}
+
+.iconContainer{
+  position: absolute;
+  right : 0px;
+  bottom : 0px;
+  z-index : 1;
+  background : #FFB742;
+  border-radius : 100%;
+  display : flex ;
+  justify-content:center;
+  align-items:center;
+}
+
+.input{
+  background: #212529;
+  border : none;
+  border-radius : 40px;
+  padding : 20px;
+  width : 100%;
+  margin-top : 30px;
+  caret-color: #FFB742;
+  color : white;
+}
+
+input::placeholder{
+  color: #7C7C7C;
+}
+
+input:focus{
+  border : none;
+  outline : none;
+}
+
+.icon{
+  width : 25px;
+  height : 25px;
+  margin : 20px;
+}

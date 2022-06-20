@@ -3,3 +3,46 @@
   justify-content: center;
   align-items: center;
 }
+
+.img{
+  width : 500px;
+  float : right;
+}
+
+
+
+
+.rightContainer{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.who{
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.08);
+  padding : 10px;
+  border-radius : 22px;
+  color : #FFB742;
+  font-size : 15px;
+}
+
+.aboutme{
+  color : #D5D5D5;
+  font-size : 32px;
+  margin-bottom : 20px;
+}
+
+.description{
+  color : #D5D5D5;
+  margin-bottom : 50px;
+  font-weight: 200;
+}
+
+.hireme{
+  background : #FFB742;
+  border : none;
+  border-radius : 20px;
+  padding : 5px 20px;
+  font-weight: 500;
+}

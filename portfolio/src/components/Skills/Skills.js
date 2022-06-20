@@ -24,9 +24,10 @@ function Skills() {
 	}, []);
 	return (
 		<section id="skills" className={styles.container}>
-			Leetcode Profile
-			<div>
-				Total Questions Solved : <span>{data?.totalSolved}</span>
+			<div className={styles.title}>Leetcode Profile</div>
+			<div className={styles.questionSolved}>
+				Total Questions Solved :{" "}
+				<span style={{ color: "#FFB742" }}>{data?.totalSolved}</span>
 			</div>
 			<div className={styles.progressContainer}>
 				<div className={styles.progress}>
@@ -38,7 +39,7 @@ function Skills() {
 							transition: "stroke-dashoffset 0.5s ease 0s",
 							textSize: "14px",
 							pathColor: "#00b8a3",
-							trailColor: "rgba(0, 184, 163, 0.)",
+							trailColor: "rgba(0, 184, 163, 0.1)",
 						})}
 					>
 						<div>
@@ -48,7 +49,7 @@ function Skills() {
 							/{data?.totalEasy}
 						</div>
 					</CircularProgressbarWithChildren>
-					Easy
+					<p style={{ fontSize: "20px", color: "#00b8a3" }}>Easy</p>
 				</div>
 				<div className={styles.progress}>
 					<CircularProgressbarWithChildren
@@ -67,7 +68,7 @@ function Skills() {
 							/{data?.totalMedium}
 						</div>
 					</CircularProgressbarWithChildren>
-					Medium
+					<p style={{ fontSize: "20px", color: "#FFB742" }}>Medium</p>
 				</div>
 				<div className={styles.progress}>
 					<CircularProgressbarWithChildren
@@ -86,7 +87,7 @@ function Skills() {
 							/{data?.totalHard}
 						</div>
 					</CircularProgressbarWithChildren>
-					Hard
+					<p style={{ fontSize: "20px", color: "#ef4743" }}>Hard</p>
 				</div>
 			</div>
 		</section>

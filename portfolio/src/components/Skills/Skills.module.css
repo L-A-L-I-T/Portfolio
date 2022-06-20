@@ -6,13 +6,27 @@
   color :white;
 }
 
+.title{
+  font-size: 40px;
+}
+
+.questionSolved{
+  font-size: 25px;
+}
+
 .progressContainer{
   display : flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  margin-top : 50px;
 }
 
 .progress{
-  width : 200px;
+  width : 180px;
+  margin : 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
