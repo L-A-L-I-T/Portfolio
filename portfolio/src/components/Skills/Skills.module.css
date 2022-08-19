@@ -1,17 +1,30 @@
 .container{
   display : flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   color :white;
+  padding : 0px 50px;
+}
+
+.leftDiv{
+  width : 40vw;
 }
 
 .title{
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .questionSolved{
-  font-size: 25px;
+  font-size: 16px;
+}
+
+.ques{
+  font-size : 16px;
+}
+
+.quesType{
+  font-size : 16px;
+  margin-top : 10px;
 }
 
 .progressContainer{
@@ -19,14 +32,153 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top : 50px;
 }
 
 .progress{
-  width : 180px;
-  margin : 20px 80px;
+  width : 90px;
+  margin : 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.codingProfileDiv{
+  background: rgba(56, 62, 69, 0.44);
+  padding : 20px;
+  border-radius : 5px;
+}
+
+.skills{
+  border-radius : 30px;
+  color : #FFB742;
+  background-color : rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  padding : 10px;
+  font-size : 12px;
+  margin-bottom: 20px;
+}
+
+.leftDivTitle{
+  margin-top : 10px;
+}
+
+.logoContainer{
+  display : flex;
+  flex-wrap: wrap;
+}
+
+.logoDiv{
+  width : 80px;
+  height : 80px;
+  background: #383E45;
+  border-radius: 5px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  margin: 10px 10px 0px 0px;
+}
+
+.logoImg{
+  width : 60px;
+  background : transparent;
+}
+
+.link{
+  text-decoration: none;
+  color : #FFB742;
+}
+.link:hover{
+  color :rgba(255, 183, 66,0.9)
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    color :white;
+    padding : 0px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .leftDiv{
+    width : 100vw;
+    margin-bottom: 50px;
+  }
+  
+  .title{
+    font-size: 15px;
+  }
+  
+  .questionSolved{
+    font-size: 12px;
+  }
+  
+  .ques{
+    font-size : 12px;
+  }
+  
+  .quesType{
+    font-size : 12px;
+    margin-top : 10px;
+  }
+  
+  .progressContainer{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .progress{
+    width : 90px;
+    margin : 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .codingProfileDiv{
+    background: rgba(56, 62, 69, 0.44);
+    padding : 20px;
+    border-radius : 5px;
+  }
+  
+  .skills{
+    border-radius : 30px;
+    color : #FFB742;
+    background-color : rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+    padding : 10px;
+    font-size : 12px;
+    margin-bottom: 20px;
+  }
+  
+  .leftDivTitle{
+    margin-top : 10px;
+  }
+  
+  .logoContainer{
+    display : flex;
+    flex-wrap: wrap;
+    padding : 0px 30px;
+    justify-content:center;
+    align-items : center;
+  }
+  
+  .logoDiv{
+    width : 60px;
+    height : 60px;
+    background: #383E45;
+    margin: 10px 10px 0px 0px;
+  }
+  
+  .logoImg{
+    width : 40px;
+    background : transparent;
+  }
 }

@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import Logo from "../../assets/icons/logo.svg";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Resume from "../../assets/files/Lalit_Rajput_Resume.pdf";
 function Header() {
 	const [activeSection, setActiveSection] = useState("home");
 	const [navbarActive, setNavbarActive] = useState(false);
@@ -86,17 +87,19 @@ function Header() {
 						Contact
 					</HashLink>
 				</div>
-				<button className={styles.downloadBtn}>
-					<i
-						class="bi bi-download"
-						style={{
-							marginRight: "10px",
-							fontSize: "16px",
-							fontWeight: "500",
-						}}
-					></i>
-					Resume
-				</button>
+				<a href={Resume} download>
+					<button className={styles.downloadBtn}>
+						<i
+							class="bi bi-download"
+							style={{
+								marginRight: "10px",
+								fontSize: "16px",
+								fontWeight: "500",
+							}}
+						></i>
+						Resume
+					</button>
+				</a>
 			</div>
 		</BrowserRouter>
 	);

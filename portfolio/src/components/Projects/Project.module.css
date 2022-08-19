@@ -1,5 +1,173 @@
 .container{
+  width: 100%;
+  padding-top : 50px;
   display : flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.carouselDiv{
+  display : flex;
+  justify-content: space-around;
+}
+
+.imgsDiv{
+  display : flex;
+  width : 40vw;
+  flex-direction: column;
+  justify-content : space-around;
+}
+
+.img{
+  width : 600px;
+  height : 300px;
+  margin : 10px;
+}
+.leftDiv{
+  min-height : 100%;
+  color : white;
+  width : 40vw;
+  display : flex;
+  flex-direction: column;
+  justify-content : space-around;
+  padding : 50px 0px;
+}
+.title{
+  border-radius : 30px;
+  color : #FFB742;
+  background-color : rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  padding : 10px;
+  font-size : 12px;
+
+}
+
+.featured{
+  font-size : 22px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight : 600;
+  margin-bottom : 20px;
+}
+
+.projectTitle{
+    font-size : 30px;
+    color : #FFB742;
+    font-weight : 600;
+}
+
+.projectDesc{
+  font-size : 16px;
+  color : #FFFFFF;
+  font-weight : 500;
+  margin-bottom : 10px;
+}
+a{
+  margin-right : 10px;
+  text-decoration : none;
+}
+
+.btn{
+  border-color : #FFB742 !important;
+  color : #FFB742 !important;
+  font-size : 12px !important;
+}
+
+.btn:hover{
+  border-color : #FFB742 !important;
+}
+
+.carouselDiv{
+  display: flex;
+  justify-content : center;
+  align-items : center;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .carouselDiv{
+    display : flex;
+    justify-content: space-around;
+  }
+  
+  .imgsDiv{
+    display : flex;
+    width : 40vw;
+    flex-direction: column;
+    justify-content : space-around;
+  }
+  
+  .img{
+    width : 300px;
+    height : 150px;
+    margin : 10px;
+  }
+  .leftDiv{
+    min-height : 100%;
+    color : white;
+    width : 40vw;
+    display : flex;
+    flex-direction: column;
+    justify-content : space-around;
+    padding : 50px 0px;
+    margin-right : 10px
+  }
+  .title{
+    border-radius : 20px;
+    color : #FFB742;
+    background-color : rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+    padding : 10px;
+    font-size : 12px;
+  
+  }
+  
+  .featured{
+    font-size : 16px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight : 600;
+    margin-bottom : 20px;
+  }
+  
+  .projectTitle{
+      font-size : 15px;
+      color : #FFB742;
+      font-weight : 600;
+  }
+  
+  .projectDesc{
+    font-size : 12px;
+    color : #FFFFFF;
+    font-weight : 500;
+    margin-bottom : 10px;
+  }
+  a{
+    margin-right : 10px;
+    text-decoration : none;
+  }
+  
+  .btn{
+    border-color : #FFB742 !important;
+    color : #FFB742 !important;
+    font-size : 10px !important;
+  }
+  
+  .btn:hover{
+    border-color : #FFB742 !important;
+  }
+  
+  .carouselDiv{
+    display: flex;
+    justify-content : center;
+    align-items : center;
+  }
+
+  .featuresDiv > ul > li{
+    font-size : 12px;
+  }
+  .featuresDiv > h3{
+    font-size : 15px;
+  }
 }

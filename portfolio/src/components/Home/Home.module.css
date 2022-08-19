@@ -6,6 +6,8 @@
   color : white;
 }
 
+
+
 .topText{
   font-size : 25px;
 }
@@ -20,4 +22,91 @@
   font-size : 20px;
   font-weight: 100;
   margin : 20px 0px;
+}
+
+.box{
+  width : 300px;
+  background: rgba(56, 62, 69, 0.44); 
+  border-radius: 10px;
+  padding : 12px 30px;
+  display: flex;
+  filter: drop-shadow(5px 5px 5px  rgba(0, 0, 0, 0.25));
+  justify-content: start;
+  align-items: center;
+
+}
+
+.badge{
+  width : 50px;
+  margin-right : 40px;
+}
+
+.boxContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top : 70px;
+}
+
+.number{
+  text-align: center;
+  color : #FFB742;
+  font-size : 25px;
+}
+.belowText{
+  font-size : 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .topText{
+    font-size : 20px;
+  }
+
+  .avatar{
+    width : 100px;
+  }
+  
+  .profession{
+    font-size : 25px;
+    font-weight: 600;
+    margin : 5px 0px;
+  }
+  
+  .bottomText{
+    font-size : 12px;
+    font-weight: 100;
+    margin : 10px 0px;
+  }
+  
+  .box{
+    width : 300px;
+    padding : 12px 30px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .badge{
+    width : 30px;
+    margin-right : 40px;
+  }
+  
+  .boxContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top : 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .number{
+    text-align: center;
+    color : #FFB742;
+    font-size : 15px;
+  }
+  .belowText{
+    font-size : 10px;
+  }
 }

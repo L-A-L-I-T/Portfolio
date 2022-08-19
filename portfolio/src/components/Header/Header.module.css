@@ -8,6 +8,7 @@
   left : 0px;
   right : 0px;
   padding : 10px 40px;
+  z-index : 10;
   /* margin-right : 5px; */
 
 }
@@ -39,4 +40,54 @@
   border : none;
   font-weight : 600;
   font-size : 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color : white;
+    position : fixed;
+    background: rgba(56, 62, 69, 0.44);
+    left : 0px;
+    right : 0px;
+    padding : 10px 10px;
+    z-index : 10;
+    /* margin-right : 5px; */
+  
+  }
+  
+  .logo{
+    width : 40px;
+  }
+  
+  .tabContainer{
+    display: flex;
+    margin-left : 10px;
+  }
+  
+  .tab{
+    text-decoration: none;
+    color : white;
+    margin : 0px 5px;
+    cursor: pointer;
+    font-size : 12px;
+  }
+  
+  .tab:hover{
+    color : #FFB742;
+  }
+  
+  .downloadBtn{
+    background: #FFB742;
+    border-radius : 20px;
+    padding : 5px 10px;
+    border : none;
+    font-weight : 600;
+    font-size : 10px;
+    display : flex;
+    justify-content:center;
+    align-items : center;
+  }
 }

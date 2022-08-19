@@ -5,6 +5,7 @@
   width : 100%;
   display : flex;
   padding : 50px 100px;
+  padding-top : 200px;
   color : white;
 }
 
@@ -21,8 +22,41 @@ div > p{
   color: #7B7B7B;
 }
 
+.link{
+  color: #7B7B7B;
+  margin-bottom: 10px;
+}
+.link:hover{
+  color : #FFB742;
+}
+.socialLinkDiv{
+  display : flex;
+  flex-direction: column;
+}
+
+.socialLink{
+  color: #7B7B7B;
+  margin-bottom: 10px;
+}
+
+.socialLink:hover{
+  color : #FFB742;
+}
+
+.linkDiv{
+  display : flex;
+  flex-direction: column;
+  justify-content : space-between;
+}
+
 .inputContainer{
   position: relative;
+}
+
+.OuterlinkDiv{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
 }
 
 .iconContainer{
@@ -61,4 +95,187 @@ input:focus{
   width : 25px;
   height : 25px;
   margin : 20px;
+}
+
+.topDiv{
+  position: absolute;
+  padding : 50px 50px;
+  display : flex;
+  justify-content : space-around;
+  align-items : center;
+  top : -60px;
+  left : 200px;
+  right : 200px;
+  background-color : #FFB742;
+  border-radius : 10px;
+}
+
+.topDiv > h3 {
+  color : #000000;
+}
+
+.topDiv > p{
+  inline-size : 350px;
+  text-align: center;
+  color : #000000
+}
+
+.topDiv > button {
+  border: 2px solid #000000;
+  border-radius : 50px;
+  background : transparent;
+  padding : 10px 20px;
+}
+
+.topDiv > button:hover{
+  /* background :rgba(255, 183, 66,0.3) !important; */
+  background : #F5FBF2;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container{
+    position: absolute;
+    bottom : 0px;
+    background: #1C1C1C;
+    width : 100%;
+    display : flex;
+    flex-direction: column;
+    padding : 10px 50px;
+    padding-top : 150px;
+    color : white;
+    justify-content : center;
+    align-items : center;
+  }
+  
+  .icon{
+   margin-right : 20px
+  }
+  
+  div>h5{
+    margin-bottom : 30px;
+    color : #F5FBF2;
+  }
+  
+  div > p{
+    color: #7B7B7B;
+  }
+  
+  .link{
+    color: #7B7B7B;
+    margin-bottom: 10px;
+  }
+  .link:hover{
+    color : #FFB742;
+  }
+  .socialLinkDiv{
+    display : flex;
+    flex-direction: column;
+  }
+  
+  .socialLink{
+    color: #7B7B7B;
+    margin-bottom: 10px;
+  }
+  
+  .socialLink:hover{
+    color : #FFB742;
+  }
+  
+  .linkDiv{
+    display : flex;
+    flex-direction: column;
+    justify-content : space-between;
+  }
+  
+  .inputContainer{
+    position: relative;
+  }
+  
+  .iconContainer{
+    position: absolute;
+    right : 0px;
+    bottom : 0px;
+    z-index : 1;
+    background : #FFB742;
+    border-radius : 100%;
+    display : flex ;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  .input{
+    background: #212529;
+    border : none;
+    border-radius : 40px;
+    padding : 20px;
+    width : 100%;
+    margin-top : 30px;
+    caret-color: #FFB742;
+    color : white;
+  }
+  
+  input::placeholder{
+    color: #7C7C7C;
+  }
+  
+  input:focus{
+    border : none;
+    outline : none;
+  }
+  
+  .icon{
+    width : 25px;
+    height : 25px;
+    margin : 20px;
+  }
+  
+  .topDiv{
+    position: absolute;
+    padding : 20px 20px;
+    display : flex;
+    justify-content : space-around;
+    align-items : center;
+    top : -50px;
+    left : 30px;
+    right : 30px;
+    background-color : #FFB742;
+    border-radius : 10px;
+  }
+  
+  .topDiv > h3 {
+    color : #000000;
+    font-size : 15px;
+  }
+  
+  .topDiv > p{
+    inline-size : 150px;
+    text-align: center;
+    color : #000000;
+    font-size : 10px
+  }
+  
+  .topDiv > button {
+    border: 2px solid #000000;
+    border-radius : 50px;
+    background : transparent;
+    padding : 5px 10px;
+    font-size : 10px;
+  }
+  
+  .topDiv > button:hover{
+    /* background :rgba(255, 183, 66,0.3) !important; */
+    background : #F5FBF2;
+  }
+
+  .titleDiv{
+    width : 100vw;
+    text-align : center;
+    margin-bottom: 30px;
+  }
+
+  .OuterlinkDiv{
+    display: flex;
+    width : 100vw;
+  }
 }

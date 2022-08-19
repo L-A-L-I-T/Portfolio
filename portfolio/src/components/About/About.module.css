@@ -6,12 +6,7 @@
 
 .img{
   width : 500px;
-  float : right;
 }
-
-
-
-
 .rightContainer{
   display : flex;
   flex-direction: column;
@@ -45,4 +40,65 @@
   border-radius : 20px;
   padding : 5px 20px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top : 100px;
+  }
+  
+  .img{
+    width : 250px;
+    float : right;
+  }
+
+  .imgDiv{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    width : 100vw;
+  }
+
+  .rightContainer{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    width : 100vw;
+    padding : 10px 50px;
+  }
+
+  
+  .who{
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.08);
+    padding : 10px;
+    border-radius : 22px;
+    color : #FFB742;
+    font-size : 12px;
+  }
+  
+  .aboutme{
+    color : #D5D5D5;
+    font-size : 22px;
+    margin-bottom : 10px;
+  }
+  
+  .description{
+    color : #D5D5D5;
+    font-size : 13px;
+    margin-bottom : 10px;
+    font-weight: 200;
+    width : 100%;
+  }
+  
+  .hireme{
+    background : #FFB742;
+    border : none;
+    border-radius : 20px;
+    padding : 5px 20px;
+    font-weight: 500;
+  }
 }
