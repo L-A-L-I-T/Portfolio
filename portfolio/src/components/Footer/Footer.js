@@ -16,14 +16,14 @@ function Footer({ handleOpen }) {
 					<button onClick={handleOpen}>Contact Me</button>
 				</div>
 				<div
-					className={`col-4 col-sm-12 ${styles.titleDiv}`}
+					className={`col-lg-4 col-sm-12 ${styles.titleDiv}`}
 					style={{ marginRight: "10px" }}
 				>
 					<h2 style={{ color: "#FFB742" }}>Lalit Rajput.</h2>
 					<div>Full stack Developer</div>
 				</div>
 				<div className={styles.OuterlinkDiv}>
-					<div className="col-4 col-sm-12">
+					<div className="col-lg-4 col-sm-12">
 						<h5>Useful Links</h5>
 						<div className={styles.linkDiv}>
 							<HashLink to="#home" smooth className={styles.link}>
