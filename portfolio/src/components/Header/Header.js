@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import Logo from "../../assets/icons/logo.svg";
 import { BrowserRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import Resume from "../../assets/files/Lalit_Rajput_Resume.pdf";
+import Resume from "../../assets/files/Lalit_Rajput.pdf";
 function Header() {
 	const [activeSection, setActiveSection] = useState("home");
 	const [navbarActive, setNavbarActive] = useState(false);
